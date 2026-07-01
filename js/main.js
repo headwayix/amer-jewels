@@ -63,6 +63,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Hero crossfade
+  const heroImgs = document.querySelectorAll('[data-hero]');
+  if (heroImgs.length > 1) {
+    let heroIdx = 0;
+    setInterval(() => {
+      heroImgs[heroIdx].style.opacity = '0';
+      heroIdx = (heroIdx + 1) % heroImgs.length;
+      heroImgs[heroIdx].style.opacity = '1';
+    }, 5000);
+  }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (revealEls.length && !reduceMotion) {
+    const revealIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          revealIO.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(el => revealIO.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('revealed'));
+  }
+
+  // Parallax (disabled on mobile — janky on touch + compositing overhead)
+  const narrowScreen = window.matchMedia('(max-width: 680px)').matches;
+  const pxSections = document.querySelectorAll('.parallax-section');
+  if (pxSections.length && !reduceMotion && !narrowScreen) {
+    let pxRaf = null;
+    function onParallaxScroll() {
+      if (pxRaf) return;
+      pxRaf = requestAnimationFrame(() => {
+        pxRaf = null;
+        const vh = window.innerHeight;
+        pxSections.forEach(el => {
+          const r = el.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > vh) return;
+          const center = r.top + r.height / 2;
+          const off = (center - vh / 2) / vh;
+          const img = el.querySelector('img');
+          if (img) img.style.transform = 'translateY(' + (off * -7) + '%)';
+        });
+      });
+    }
+    window.addEventListener('scroll', onParallaxScroll, { passive: true });
+    window.addEventListener('resize', onParallaxScroll, { passive: true });
+    onParallaxScroll();
+  }
+
   // Contact form
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {

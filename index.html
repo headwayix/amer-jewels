@@ -36,62 +36,112 @@
 
   <main>
 
-    <!-- Full-bleed hero -->
-    <section class="fade-up">
-      <a href="collections.html" style="display:block;">
-        <img src="images/hero-emerald-closeup.jpg" alt="Emerald teardrop earrings" style="width:100%; height:clamp(440px,88vh,900px); object-fit:cover;">
-      </a>
-    </section>
-
-    <!-- Full-bleed model overlay -->
-    <section style="position:relative;">
-      <img src="images/model-stud.jpg" alt="Halo stud earrings" style="width:100%; height:clamp(480px,96vh,920px); object-fit:cover; object-position:center 18%;">
-      <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; text-align:center; padding:24px; background:rgba(30,22,12,0.10);">
-        <div class="font-serif" style="font-weight:400; font-size:clamp(20px,2.4vw,30px); line-height:1.5; color:#FFFFFF; max-width:44ch; text-shadow:0 1px 22px rgba(40,28,12,0.45); text-wrap:balance;">At Amer Jewels we craft jewellery with heritage, craftsmanship and Jaipur artistry.</div>
-        <div class="font-serif" style="font-weight:400; font-size:clamp(20px,2.4vw,30px); line-height:1.5; color:#FFFFFF; text-shadow:0 1px 22px rgba(40,28,12,0.45);">Timeless elegance, everyday luxury.</div>
+    <!-- Split hero: text panel + crossfading product shots -->
+    <section style="display:flex; flex-wrap:wrap; align-items:stretch;">
+      <div style="flex:1 1 420px; display:flex; flex-direction:column; justify-content:center; gap:26px; padding:clamp(52px,6vw,108px) clamp(28px,5vw,84px); background:radial-gradient(circle at 38% 34%, #FDFAF4 0%, #F4EBDB 55%, #E7D6B8 100%);">
+        <div style="font-size:12px; letter-spacing:0.34em; text-transform:uppercase; color:#B88C3E;">Amer Jewels &middot; Jaipur</div>
+        <h1 class="font-serif" style="font-weight:400; font-size:clamp(40px,4.6vw,72px); line-height:1.08; color:#2A2417; text-wrap:balance;">Timeless elegance, everyday luxury</h1>
+        <p style="font-weight:300; font-size:clamp(15px,1.5vw,18px); line-height:1.85; color:#6E6552; max-width:42ch; text-wrap:pretty;">Jewellery that celebrates you, your moments and your story &mdash; handcrafted with heritage and Jaipur artistry.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:6px;">
+          <a href="collections.html" class="btn-primary">Explore the collection</a>
+          <a href="about.html" class="btn-outline" style="color:#8A6A28;">Our story</a>
+        </div>
+      </div>
+      <div class="hero-carousel">
+        <img data-hero src="images/hero-amethyst-citrine.jpg" alt="Amethyst and citrine drop earrings">
+        <img data-hero src="images/hero-flower-pearl.jpg" alt="Carved pink flower earrings with pearl drops">
+        <img data-hero src="images/hero-cuff.jpg" alt="Carved flower and jade cuff bracelet">
+        <img data-hero src="images/hero-leaf.jpg" alt="Carved citrine leaf pendant">
       </div>
     </section>
 
-    <!-- 4-up strip -->
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%),1fr)); gap:10px; padding:10px;">
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/ring-hand.jpg" alt="Crystal halo ring" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover;">
+    <!-- Full-bleed model, parallax -->
+    <section class="parallax-section">
+      <img src="images/model-stud.jpg" alt="Halo stud earrings">
+    </section>
+
+    <!-- Asymmetric grid: tall tile + stacked pair -->
+    <section data-reveal style="display:flex; flex-wrap:wrap; gap:clamp(10px,1.4vw,18px); padding:clamp(10px,1.4vw,18px);">
+      <a href="collections.html" style="flex:2 1 360px; overflow:hidden; display:block;">
+        <img src="images/ring-hand.jpg" alt="Crystal halo ring" class="img-zoom" style="width:100%; height:100%; min-height:420px; object-fit:cover;">
       </a>
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/necklace-sea.png" alt="Rose quartz pendant" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover;">
+      <div style="flex:1 1 260px; display:flex; flex-direction:column; gap:clamp(10px,1.4vw,18px);">
+        <a href="collections.html" style="flex:1 1 0; overflow:hidden; display:block;">
+          <img src="images/model-chandelier.png" alt="Chandelier drop earrings" class="img-zoom" style="width:100%; height:100%; min-height:210px; object-fit:cover; object-position:center 12%;">
+        </a>
+        <a href="collections.html" style="flex:1 1 0; overflow:hidden; display:block;">
+          <img src="images/stud-cluster.png" alt="Crystal cluster studs" class="img-zoom" style="width:100%; height:100%; min-height:210px; object-fit:cover; object-position:center 30%;">
+        </a>
+      </div>
+    </section>
+
+    <!-- Quiet single line -->
+    <section data-reveal style="display:flex; justify-content:center; text-align:center; padding:clamp(72px,11vw,150px) 24px;">
+      <div class="font-serif" style="font-weight:400; font-size:clamp(26px,3.6vw,46px); line-height:1.4; max-width:26ch; color:#2E281D; text-wrap:balance;">Jewellery that celebrates <em>you</em>, your moments and your story.</div>
+    </section>
+
+    <!-- Portrait gallery: box shots -->
+    <section data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(240px,100%),1fr)); gap:clamp(10px,1.4vw,18px); padding:0 clamp(10px,1.4vw,18px);">
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/box-carved-drops.jpg" alt="Carved pink flower drop earrings" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover;">
       </a>
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/stud-cluster.png" alt="Crystal cluster studs" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center 30%;">
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/box-pearl-studs.jpg" alt="Pearl sunburst stud earrings" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover;">
       </a>
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/model-chandelier.png" alt="Chandelier drop earrings" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center 12%;">
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/box-flower-rings.jpg" alt="Carved flower rings" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center 40%;">
+      </a>
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/box-topaz.jpg" alt="Blue topaz cluster ring" class="img-zoom" style="width:100%; aspect-ratio:3/4; object-fit:cover;">
       </a>
     </section>
 
-    <!-- Full-bleed editorial -->
-    <section>
-      <a href="collections.html" style="display:block;">
-        <img src="images/moonstone-editorial.png" alt="Moonstone chandelier earrings at dusk" style="width:100%; height:clamp(440px,86vh,860px); object-fit:cover;">
+    <!-- Featured pair -->
+    <section data-reveal style="display:flex; flex-direction:column; gap:clamp(32px,5vw,56px); padding:clamp(72px,10vw,130px) clamp(10px,1.4vw,18px) clamp(10px,1.4vw,18px);">
+      <div style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
+        <div class="section-label">In the spotlight</div>
+        <div class="font-serif" style="font-weight:400; font-size:clamp(26px,3.4vw,44px); line-height:1.2; color:#2E281D; text-wrap:balance;">Hand-set, in the Pink City</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px,100%),1fr)); gap:clamp(10px,1.4vw,18px);">
+        <a href="collections.html" style="text-decoration:none; display:flex; flex-direction:column; gap:16px;">
+          <div style="overflow:hidden;">
+            <img src="images/earrings-emerald-v3.jpg" alt="Emerald teardrop earrings" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center;">
+            <div class="font-serif" style="font-size:24px; font-weight:500; color:#2E281D;">The Emerald Teardrops</div>
+            <div style="font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:#9A8F77;">Pear-cut green &middot; Pav&eacute; halo</div>
+          </div>
+        </a>
+        <a href="collections.html" style="text-decoration:none; display:flex; flex-direction:column; gap:16px;">
+          <div style="overflow:hidden;">
+            <img src="images/hero-topaz-drops.jpg" alt="Blue topaz drop earrings with pavé hoops" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center;">
+            <div class="font-serif" style="font-size:24px; font-weight:500; color:#2E281D;">Sky Topaz Drops</div>
+            <div style="font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:#9A8F77;">Cushion topaz &middot; Pav&eacute; hoop</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3-up product grid -->
+    <section data-reveal style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%),1fr)); gap:clamp(10px,1.4vw,18px); padding:0 clamp(10px,1.4vw,18px);">
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/bracelet-v3.jpg" alt="Crystal drop bracelet" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+      </a>
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/necklace-sea.png" alt="Rose quartz pendant" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+      </a>
+      <a href="collections.html" style="overflow:hidden; display:block;">
+        <img src="images/necklaces-layered.png" alt="Carved blossom layered necklaces" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
       </a>
     </section>
 
-    <!-- 3-up strip -->
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(280px,100%),1fr)); gap:10px; padding:10px;">
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/earrings-emerald-sage.jpg" alt="Emerald earrings on sage" class="img-zoom" style="width:100%; aspect-ratio:1/1; object-fit:cover;">
-      </a>
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/bracelet-gold-styled.jpg" alt="Crystal drop bracelet" class="img-zoom" style="width:100%; aspect-ratio:1/1; object-fit:cover;">
-      </a>
-      <a href="collections.html" style="display:block; overflow:hidden;">
-        <img src="images/necklaces-layered.png" alt="Carved blossom layered necklaces" class="img-zoom" style="width:100%; aspect-ratio:1/1; object-fit:cover;">
-      </a>
-    </section>
-
-    <!-- Quiet invitation -->
-    <section style="display:flex; flex-direction:column; align-items:center; gap:22px; text-align:center; padding:clamp(72px,10vw,130px) 24px;">
-      <div class="font-serif" style="font-style:italic; font-weight:400; font-size:clamp(22px,2.6vw,32px); line-height:1.5; color:#4A4334; max-width:34ch; text-wrap:balance;">Jewellery that celebrates you, your moments and your story.</div>
-      <a href="collections.html" class="link-underline">Explore the collection</a>
+    <!-- Closing invitation -->
+    <section data-reveal style="display:flex; flex-direction:column; align-items:center; gap:24px; text-align:center; padding:clamp(80px,11vw,160px) 24px;">
+      <div class="divider" style="width:44px;"></div>
+      <div class="font-serif" style="font-weight:400; font-size:clamp(30px,4vw,52px); line-height:1.2; max-width:18ch; color:#2E281D; text-wrap:balance;">See every piece, up close</div>
+      <a href="collections.html" class="btn-outline">Explore the collection</a>
     </section>
 
   </main>
