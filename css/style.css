@@ -190,7 +190,7 @@ button { font-family: inherit; cursor: pointer; }
 .filter-btn:hover { color: #B88C3E; }
 
 .product-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: clamp(12px, 1.8vw, 24px); padding: 0 clamp(12px, 2vw, 28px) clamp(64px, 8vw, 100px);
 }
 .product-card { cursor: pointer; display: flex; flex-direction: column; gap: 14px; animation: fadeUp 0.7s ease both; }
