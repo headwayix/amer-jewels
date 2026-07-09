@@ -33,64 +33,117 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- Hero — the workshop -->
     <section style="position:relative;" class="fade-up">
-      <img src="images/ring-hand.jpg" alt="Crystal halo ring, worn" style="width:100%; height:clamp(420px,78vh,780px); object-fit:cover; object-position:center 30%;">
-      <div style="position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:center; padding:clamp(32px,5vw,64px) 24px; background:linear-gradient(180deg, rgba(20,15,8,0) 50%, rgba(20,15,8,0.32) 100%);">
-        <h1 class="font-serif" style="font-weight:400; font-size:clamp(40px,6vw,76px); color:#FFFFFF; margin:0; text-shadow:0 2px 28px rgba(30,20,8,0.5);">The Atelier</h1>
+      <img src="images/atelier-7987.jpg" alt="The Amer Jewels workshop in Jaipur" style="width:100%; height:clamp(460px,86vh,860px); object-fit:cover; object-position:center 40%;">
+      <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; text-align:center; padding:24px; background:linear-gradient(180deg, rgba(28,18,8,0.42) 0%, rgba(28,18,8,0.18) 45%, rgba(28,18,8,0.48) 100%);">
+        <div style="font-size:12px; letter-spacing:0.36em; text-transform:uppercase; color:#F0E2C6; text-shadow:0 1px 16px rgba(20,12,4,0.6);">Made by hand in Jaipur</div>
+        <h1 class="font-serif" style="font-weight:400; font-size:clamp(44px,6.6vw,88px); color:#FFFFFF; margin:0; text-shadow:0 2px 30px rgba(20,12,4,0.6);">The Atelier</h1>
       </div>
     </section>
 
     <!-- Intro -->
     <section style="display:flex; flex-direction:column; align-items:center; gap:24px; text-align:center; padding:clamp(72px,10vw,130px) 24px;">
-      <div class="section-label">Made by hand in Jaipur</div>
-      <div class="font-serif" style="font-weight:400; font-size:clamp(26px,3.4vw,44px); line-height:1.45; max-width:30ch; color:#2E281D; text-wrap:balance;">Where heritage meets the hand.</div>
+      <div class="font-serif" style="font-weight:400; font-size:clamp(26px,3.4vw,44px); line-height:1.45; max-width:26ch; color:#2E281D; text-wrap:balance;">Where heritage meets the hand.</div>
+      <p style="font-weight:300; font-size:clamp(15px,1.5vw,17px); line-height:1.95; color:#6E6552; max-width:52ch; margin:0; text-wrap:pretty;">Down a lane in the old city, in lamplight and quiet concentration, our craftspeople cut, form and set each piece by hand &mdash; the same way it has been done here for generations.</p>
     </section>
 
-    <!-- Three movements -->
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(280px,100%),1fr)); gap:clamp(12px,1.8vw,24px); padding:0 clamp(12px,2vw,28px);">
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="overflow:hidden;">
-          <img src="images/earrings-emerald-styled.jpg" alt="Stone selection" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
-        </div>
-        <div style="display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; padding:0 16px 24px;">
-          <div style="font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:#B88C3E;">I</div>
-          <div class="font-serif" style="font-size:26px; font-weight:500;">The stone</div>
-          <p style="font-weight:300; font-size:14px; line-height:1.85; color:#8A8071; max-width:36ch;">Each gemstone is chosen by eye — for colour, fire and character — before it earns its setting.</p>
-        </div>
+    <!-- Movement I — The Stone -->
+    <section class="atelier-movement" style="display:flex; flex-wrap:wrap; align-items:stretch; background:#FBF7EE; border-top:1px solid #EFE8D9; border-bottom:1px solid #EFE8D9;">
+      <div style="flex:1 1 440px; min-height:380px; overflow:hidden;">
+        <img src="images/atelier-7937.jpg" alt="Shaping a gemstone on the cutting wheel" class="img-zoom" style="width:100%; height:100%; object-fit:cover; object-position:center;">
       </div>
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="overflow:hidden;">
-          <img src="images/bracelet-gold-styled.jpg" alt="Hand setting" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
-        </div>
-        <div style="display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; padding:0 16px 24px;">
-          <div style="font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:#B88C3E;">II</div>
-          <div class="font-serif" style="font-size:26px; font-weight:500;">The hand</div>
-          <p style="font-weight:300; font-size:14px; line-height:1.85; color:#8A8071; max-width:36ch;">Bezels are raised, links forged and every stone set by hand — techniques kept alive across generations.</p>
-        </div>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div style="overflow:hidden;">
-          <img src="images/stud-cluster.png" alt="Finishing" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 30%;">
-        </div>
-        <div style="display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; padding:0 16px 24px;">
-          <div style="font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:#B88C3E;">III</div>
-          <div class="font-serif" style="font-size:26px; font-weight:500;">The finish</div>
-          <p style="font-weight:300; font-size:14px; line-height:1.85; color:#8A8071; max-width:36ch;">Polished, checked and worn against the light — a piece leaves only when it feels inevitable.</p>
-        </div>
+      <div style="flex:1 1 360px; display:flex; flex-direction:column; justify-content:center; gap:20px; padding:clamp(40px,6vw,96px);">
+        <div class="section-label">Movement I &middot; The Stone</div>
+        <h2 class="font-serif" style="font-weight:500; font-size:clamp(30px,3.6vw,46px); line-height:1.2; margin:0; text-wrap:balance;">Chosen by eye, cut by hand</h2>
+        <p style="font-weight:300; font-size:16px; line-height:1.9; color:#6E6552; margin:0; max-width:46ch; text-wrap:pretty;">Each rough stone is read for colour, clarity and fire, then ground and polished against the wheel until its character comes alive &mdash; one gem at a time.</p>
       </div>
     </section>
 
-    <!-- Workshop placeholder -->
-    <section style="padding:clamp(64px,9vw,110px) clamp(12px,2vw,28px) 0;">
-      <div style="border:1px dashed #D8CDB4; background:#FBF8F1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; text-align:center; padding:clamp(48px,8vw,96px) 24px;">
-        <div class="section-label">Placeholder</div>
-        <div class="font-serif" style="font-size:clamp(22px,2.6vw,30px); color:#6E6552;">Workshop photography</div>
-        <div style="font-size:13px; font-weight:300; color:#9A8F77; max-width:44ch; line-height:1.8;">A wide shot of the bench — hands, tools, loose stones. Send a photo of the atelier and it will live here.</div>
+    <!-- Duo — measuring + polishing -->
+    <section style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(320px,100%),1fr)); gap:10px; padding:10px;">
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7945.jpg" alt="Gauging an amethyst with callipers" class="img-zoom" style="width:100%; aspect-ratio:3/2; object-fit:cover;">
+      </div>
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7940.jpg" alt="Polishing a cabochon" class="img-zoom" style="width:100%; aspect-ratio:3/2; object-fit:cover;">
       </div>
     </section>
 
-    <!-- Quote -->
+    <!-- Full-bleed candlelit moment -->
+    <section style="position:relative;">
+      <img src="images/atelier-7915.jpg" alt="A craftsman at the lamp-lit wheel" style="width:100%; height:clamp(460px,82vh,820px); object-fit:cover; object-position:center 45%;">
+      <div style="position:absolute; inset:0; display:flex; align-items:flex-end; padding:clamp(28px,5vw,72px); background:linear-gradient(180deg, rgba(20,12,4,0) 55%, rgba(20,12,4,0.55) 100%);">
+        <div class="font-serif" style="font-style:italic; font-weight:400; font-size:clamp(20px,2.6vw,32px); color:#FBF3E2; max-width:26ch; line-height:1.5; text-shadow:0 1px 20px rgba(20,12,4,0.6); text-wrap:balance;">A single lamp, a steady hand, and hours of patience.</div>
+      </div>
+    </section>
+
+    <!-- Movement II — The Hand -->
+    <section class="atelier-movement atelier-movement--reverse" style="display:flex; flex-wrap:wrap; align-items:stretch;">
+      <div class="atelier-movement__text" style="flex:1 1 360px; display:flex; flex-direction:column; justify-content:center; gap:20px; padding:clamp(40px,6vw,96px);">
+        <div class="section-label">Movement II &middot; The Hand</div>
+        <h2 class="font-serif" style="font-weight:500; font-size:clamp(30px,3.6vw,46px); line-height:1.2; margin:0; text-wrap:balance;">Formed at the bench</h2>
+        <p style="font-weight:300; font-size:16px; line-height:1.9; color:#6E6552; margin:0; max-width:46ch; text-wrap:pretty;">Silver and gold are drawn, filed, soldered and shaped over the flame. Every blossom, bezel and link is worked by hand until the metal is ready to hold its stone.</p>
+      </div>
+      <div class="atelier-movement__img" style="flex:1 1 440px; min-height:380px; overflow:hidden;">
+        <img src="images/atelier-7699.jpg" alt="Filing a pair of carved flower studs" class="img-zoom" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </section>
+
+    <!-- Duo — torch + forming -->
+    <section style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(320px,100%),1fr)); gap:10px; padding:10px;">
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7774.jpg" alt="Soldering over the flame" class="img-zoom" style="width:100%; aspect-ratio:3/2; object-fit:cover;">
+      </div>
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7727.jpg" alt="Forming a ring on the mandrel" class="img-zoom" style="width:100%; aspect-ratio:3/2; object-fit:cover; object-position:center 40%;">
+      </div>
+    </section>
+
+    <!-- Full-bleed tool flat-lay -->
+    <section style="position:relative;">
+      <img src="images/atelier-7803.jpg" alt="The jeweller&rsquo;s tools, laid out" style="width:100%; height:clamp(400px,68vh,720px); object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:flex-end; padding:clamp(24px,4vw,56px);">
+        <div style="background:rgba(253,250,244,0.92); padding:clamp(20px,3vw,32px) clamp(24px,3.4vw,40px); max-width:360px;">
+          <div style="font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:#B88C3E; margin-bottom:10px;">The Bench</div>
+          <p class="font-serif" style="font-size:clamp(18px,2vw,24px); line-height:1.4; color:#2E281D; margin:0;">Hammers, files, callipers and pliers &mdash; many older than the makers who wield them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movement III — The Setting -->
+    <section style="display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; padding:clamp(64px,9vw,120px) 24px clamp(36px,5vw,56px);">
+      <div class="section-label">Movement III &middot; The Setting</div>
+      <h2 class="font-serif" style="font-weight:500; font-size:clamp(30px,3.8vw,48px); margin:0; text-wrap:balance;">Every stone, placed by hand</h2>
+      <p style="font-weight:300; font-size:16px; line-height:1.9; color:#6E6552; max-width:48ch; margin:6px 0 0; text-wrap:pretty;">Under the loupe, each gem is sorted, matched and set with tweezers and patience until the piece is whole.</p>
+    </section>
+
+    <!-- Triptych — sorting & selecting -->
+    <section style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(280px,100%),1fr)); gap:10px; padding:0 10px;">
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7851.jpg" alt="Sorting stones in the dish" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+      </div>
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7853.jpg" alt="Selecting a gem with tweezers" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+      </div>
+      <div style="overflow:hidden;">
+        <img src="images/atelier-7860.jpg" alt="Holding a heart-cut stone" class="img-zoom" style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+      </div>
+    </section>
+
+    <!-- The People -->
+    <section class="atelier-movement" style="display:flex; flex-wrap:wrap; align-items:stretch; margin-top:clamp(64px,9vw,110px); background:#FBF7EE; border-top:1px solid #EFE8D9; border-bottom:1px solid #EFE8D9;">
+      <div style="flex:1 1 380px; min-height:460px; overflow:hidden;">
+        <img src="images/atelier-8001.jpg" alt="With the makers in the workshop" class="img-zoom" style="width:100%; height:100%; object-fit:cover; object-position:center 30%;">
+      </div>
+      <div style="flex:1 1 360px; display:flex; flex-direction:column; justify-content:center; gap:20px; padding:clamp(40px,6vw,96px);">
+        <div class="section-label">The People</div>
+        <h2 class="font-serif" style="font-weight:500; font-size:clamp(30px,3.6vw,46px); line-height:1.2; margin:0; text-wrap:balance;">The hands behind every piece</h2>
+        <p style="font-weight:300; font-size:16px; line-height:1.9; color:#6E6552; margin:0; max-width:46ch; text-wrap:pretty;">Our workshop is a family of master craftspeople whose skill has been handed down through generations. When you wear Amer Jewels, you carry their artistry with you.</p>
+      </div>
+    </section>
+
+    <!-- Closing quote -->
     <section style="display:flex; flex-direction:column; align-items:center; gap:26px; text-align:center; padding:clamp(72px,10vw,130px) 24px;">
       <div class="font-serif" style="font-style:italic; font-weight:400; font-size:clamp(24px,3vw,38px); line-height:1.5; max-width:30ch; color:#4A4334; text-wrap:balance;">&ldquo;A piece is finished when it carries a story.&rdquo;</div>
       <div class="divider"></div>
