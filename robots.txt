@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amerjewels.com/sitemap.xml
